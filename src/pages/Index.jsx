@@ -11,7 +11,9 @@ const Index = () => {
   const handleSendMessage = () => {
     const newMessage = { text: message, sender: "user" };
     setMessages([...messages, newMessage]);
-    // TODO: connect to Rasa and send the message, then append the bot's response
+    // Replace this comment with your code to connect to Rasa and send the message.
+    // For example, you might use Fetch API or Axios to make an HTTP request to your Rasa endpoint.
+    // After sending the message, you can handle the bot's response and update the messages state accordingly.
     setMessage(""); // reset current message input
   };
 
