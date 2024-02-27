@@ -33,7 +33,7 @@ const Index = () => {
   };
 
   return (
-    <Center h="100vh" bg="gray.50">
+    <Center h="100vh" bg="gray.50" position="fixed" left="50%" transform="translateX(-50%)">
       <Container>
         <VStack spacing={4}>
           <Box p={5} shadow="md" borderWidth="1px" bg="white" borderRadius="md" w="100%" maxH="500px" overflowY="auto">
