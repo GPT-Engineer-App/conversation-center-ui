@@ -54,15 +54,7 @@ const Index = () => {
             <FormLabel htmlFor="message">Your Message</FormLabel>
             <Textarea id="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Type your message here..." />
           </FormControl>
-          <FormControl>
-            <FormLabel htmlFor="file">Upload Document</FormLabel>
-            <Input type="file" id="file" onChange={handleFileChange} />
-            {file && (
-              <Button leftIcon={<FaPaperclip />} mt={2} onClick={handleUploadFile}>
-                Upload {file.name}
-              </Button>
-            )}
-          </FormControl>
+          {/* Document upload feature has been removed from the main UI and will be handled as part of the conversation flow */}
           <Button rightIcon={<FaArrowRight />} colorScheme="blue" onClick={handleSendMessage} disabled={!message.trim()}>
             Send Message
           </Button>
