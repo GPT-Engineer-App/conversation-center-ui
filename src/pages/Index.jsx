@@ -36,7 +36,7 @@ const Index = () => {
     <Center h="100vh" bg="gray.50">
       <Container>
         <VStack spacing={4}>
-          <Box p={5} shadow="md" borderWidth="1px" bg="white" borderRadius="md" w="100%" maxH="500px" overflowY="auto">
+          <Box p={5} shadow="md" borderWidth="1px" bg="white" borderRadius="md" w="100%" h="500px" overflowY="auto">
             <VStack spacing={4}>
               {messages.map((msg, index) => (
                 <Box key={index} alignSelf={msg.sender === "user" ? "flex-end" : "flex-start"}>
